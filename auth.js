@@ -6,7 +6,7 @@ const code=req.query.code
 
 const CLIENT_ID=process.env.CLIENT_ID
 const CLIENT_SECRET=process.env.CLIENT_SECRET
-const REDIRECT_URI=`${process.env.VERCEL_URL ? "https://" + process.env.VERCEL_URL : "http://localhost:3000"}/api/callback`
+const REDIRECT_URI=`${process.env.VERCEL_URL ? "https://" + process.env.VERCEL_URL : "http://localhost:3000"}/api/auth`
 
 try{
 
@@ -45,3 +45,4 @@ res.send("Login failed")
 
 
 }
+
